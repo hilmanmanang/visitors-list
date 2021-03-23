@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { VisitorService } from '../visitor.service';
 
 @Component({
   selector: 'app-visitor',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VisitorComponent implements OnInit {
 
-  constructor() { }
+  constructor(private visitorService: VisitorService) { }
 
+  visitorList: any;
   ngOnInit(): void {
+    this.visitorService.getVisitors().subscribe(res => {
+      console.log(res)
+      this.visitorList = res;
+    })
   }
 
 }

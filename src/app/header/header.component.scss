@@ -1,9 +1,22 @@
-.row {
-    padding: 0 20px;
+.page {
+    margin: 0 20px;
+    background-color: white;
 }
 .logo {
     width: 180px;
 }
+.col-md-4 {
+    padding: 15px 25px;
+}
 .col-md-8 {
     text-align: right;
+}
+.bg {
+    background-color: rgb(240, 240, 240);
+}
+.word-visitor {
+    font-size: 25px;
+    padding: 16px;
+    font-weight: 700;
+    color: rgb(0, 79, 159);
 }

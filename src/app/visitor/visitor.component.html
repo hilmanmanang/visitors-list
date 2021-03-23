@@ -1,2 +1,22 @@
-<p>visitor works!</p>
+<div class="padding">
+    <div>
+        <table class="table">
+            <thead>
+                <th>Name</th>
+                <th>ID No</th>
+                <th>Company</th>
+                <th>Host</th>
+                <th>Purpose of Visit</th>
+            </thead>
+            <tbody *ngFor="let item of visitorList">
+                <td>{{item.name}}</td>
+                <td>{{item.idNo}}</td>
+                <td>{{item.company}}</td>
+                <td>{{item.host}}</td>
+                <td>{{item.purpose}}</td>
+            </tbody>
+        </table>
+    </div>
+
+</div>
   

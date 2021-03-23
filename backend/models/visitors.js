@@ -3,18 +3,20 @@ import mongoose from 'mongoose';
 const Schema = mongoose.Schema;
 
 let Visitor = new Schema({
-    title: {
+    name: {
         type: String
     },
-    responsible: {
+    idNo: {
+        type: Number
+    },
+    company: {
         type: String
     },
-    severity: {
+    host: {
         type: String
     },
-    status: {
-        type: String,
-        default: 'Open'
+    purpose: {
+        type: String
     }
 });
 
